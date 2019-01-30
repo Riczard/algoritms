@@ -21,7 +21,7 @@ public class BinarySearch {
             }
             if (quess < searched) {
                 low = mid + 1;
-            } else if (quess > searched) {
+            } else {
                 high = mid - 1;
             }
         }
