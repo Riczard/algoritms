@@ -3,7 +3,7 @@ package com.kuklinski.binarySearch;
 
 import java.util.NoSuchElementException;
 
-//fast log2n
+// logarithm speed  O(logn)
 public class BinarySearch {
 
     //list must be sorted
