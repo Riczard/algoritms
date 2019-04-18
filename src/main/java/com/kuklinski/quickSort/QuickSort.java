@@ -1,7 +1,6 @@
 package com.kuklinski.quickSort;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 //logarithm speed  O(n log n)
@@ -24,10 +23,10 @@ public class QuickSort {
             } else greater = addNewElement(greater, arr[i]);
         }
 
-        for (int j = randomNumberInArrRange+1; j < arr.length; j++) {
-            if (arr[j] <= pivot) {
-                less = addNewElement(less, arr[j]);
-            } else greater = addNewElement(greater, arr[j]);
+        for (int i = randomNumberInArrRange + 1; i < arr.length; i++) {
+            if (arr[i] <= pivot) {
+                less = addNewElement(less, arr[i]);
+            } else greater = addNewElement(greater, arr[i]);
         }
 
         return joinArraysAndPivot(quickSort(less), pivot, quickSort(greater));
