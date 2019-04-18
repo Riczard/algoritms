@@ -2,6 +2,7 @@ package com.kuklinski.quickSort;
 
 import java.util.Arrays;
 
+//logarithm speed  O(n log n)
 public class QuickSort {
 
     public static int[] quickSort(int[] arr) {
